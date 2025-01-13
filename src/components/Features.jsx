@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
-  const itemRef = useRef();
+  const itemRef = useRef(null);
 
   const handleMouseMove = (e) => {
     if (!itemRef.current) return;
